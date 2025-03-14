@@ -15,7 +15,7 @@ Bu talimatlar, yerel makinenizde projeyi çalıştırmak ve geliştirmek için g
 
 1. Depoyu klonlayın:
    ```bash
-   git clone https://github.com/kullaniciAdi/m-restApi.git
+   git clone https://github.com/murselsen/m-restApi.git
    ```
 2. Proje dizinine gidin:
    ```bash
