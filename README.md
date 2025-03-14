@@ -1,4 +1,4 @@
-# Proje Adı
+# m-RestApi
 
 Bu proje, RESTful API geliştirmek için bir örnek uygulamadır.
 
