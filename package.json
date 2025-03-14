@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "m-restapi",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,8 +8,8 @@
     "dev": "nodemon app.js --debug"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mürsel SEN",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "cors": "^2.8.5",
