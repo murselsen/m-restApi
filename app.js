@@ -29,7 +29,7 @@ app.use(express.json());
 
 // Sample route
 app.get("/", (req, res) => {
-  res.json(["RestApi World! Welcome to the  Server"]);
+  res.json(["RestApi World! Welcome to the Server"]);
 });
 app.get("/test", (req, res) => {
   res.json({ message: "Hello from the test endpoint!" });
