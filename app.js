@@ -9,7 +9,7 @@ import {
 
 const app = express();
 app.use(cors());
-const port = 3001;
+const port = 80;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
