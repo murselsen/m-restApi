@@ -1,15 +1,28 @@
-import express from "express";
-import cors from "cors";
 import {
   getCategories,
   getTodos,
   getTags,
   getTodosByCategoryId,
 } from "./controllers/index.js";
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
+import fs from "fs";
+import path from "path";
 
 const app = express();
+
+// Logları hem konsola hem de dosyaya yaz
+const logStream = fs.createWriteStream(path.join(process.cwd(), "access.log"), {
+  flags: "a",
+});
+
+app.use(morgan("combined", { stream: logStream })); // Dosyaya yaz
+app.use(morgan("dev")); // Konsola yaz
+
 app.use(cors());
-const port = 3001;
+
+const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
